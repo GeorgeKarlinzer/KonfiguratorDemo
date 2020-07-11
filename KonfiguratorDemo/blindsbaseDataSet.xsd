@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="blindsbaseDataSet" targetNamespace="http://tempuri.org/blindsbaseDataSet.xsd" xmlns:mstns="http://tempuri.org/blindsbaseDataSet.xsd" xmlns="http://tempuri.org/blindsbaseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="blindsbaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="blindsbaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.KonfiguratorDemo.Properties.Settings.GlobalReference.Default.blindsbaseConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="colorsTableAdapter" GeneratorDataComponentClassName="colorsTableAdapter" Name="colors" UserDataComponentName="colorsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="blindsbaseConnectionString (Settings)" DbObjectName="blindsbase.colors" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `title`, `RAL` FROM `colors`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="modelsTableAdapter" GeneratorDataComponentClassName="modelsTableAdapter" Name="models" UserDataComponentName="modelsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="blindsbaseConnectionString (Settings)" DbObjectName="blindsbase.models" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `title`, `type`, `color` FROM `models`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="param 1TableAdapter" GeneratorDataComponentClassName="param_1TableAdapter" Name="param 1" UserDataComponentName="param 1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="blindsbaseConnectionString (Settings)" DbObjectName="blindsbase.`param 1`" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `title` FROM `param 1`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="usersTableAdapter" GeneratorDataComponentClassName="usersTableAdapter" Name="users" UserDataComponentName="usersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="blindsbaseConnectionString (Settings)" DbObjectName="blindsbase.users" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `login`, `pass`, `name`, `surname`, `discount` FROM `users`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="blindsbaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="blindsbaseDataSet" msprop:Generator_UserDSName="blindsbaseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="colors" msprop:Generator_TableClassName="colorsDataTable" msprop:Generator_TableVarName="tablecolors" msprop:Generator_TablePropName="colors" msprop:Generator_RowDeletingName="colorsRowDeleting" msprop:Generator_RowChangingName="colorsRowChanging" msprop:Generator_RowEvHandlerName="colorsRowChangeEventHandler" msprop:Generator_RowDeletedName="colorsRowDeleted" msprop:Generator_UserTableName="colors" msprop:Generator_RowChangedName="colorsRowChanged" msprop:Generator_RowEvArgName="colorsRowChangeEvent" msprop:Generator_RowClassName="colorsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="models" msprop:Generator_TableClassName="modelsDataTable" msprop:Generator_TableVarName="tablemodels" msprop:Generator_TablePropName="models" msprop:Generator_RowDeletingName="modelsRowDeleting" msprop:Generator_RowChangingName="modelsRowChanging" msprop:Generator_RowEvHandlerName="modelsRowChangeEventHandler" msprop:Generator_RowDeletedName="modelsRowDeleted" msprop:Generator_UserTableName="models" msprop:Generator_RowChangedName="modelsRowChanged" msprop:Generator_RowEvArgName="modelsRowChangeEvent" msprop:Generator_RowClassName="modelsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="param_x0020_1" msprop:Generator_TableClassName="param_1DataTable" msprop:Generator_TableVarName="tableparam_1" msprop:Generator_TablePropName="param_1" msprop:Generator_RowDeletingName="param_1RowDeleting" msprop:Generator_RowChangingName="param_1RowChanging" msprop:Generator_RowEvHandlerName="param_1RowChangeEventHandler" msprop:Generator_RowDeletedName="param_1RowDeleted" msprop:Generator_UserTableName="param 1" msprop:Generator_RowChangedName="param_1RowChanged" msprop:Generator_RowEvArgName="param_1RowChangeEvent" msprop:Generator_RowClassName="param_1Row">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="users" msprop:Generator_TableClassName="usersDataTable" msprop:Generator_TableVarName="tableusers" msprop:Generator_TablePropName="users" msprop:Generator_RowDeletingName="usersRowDeleting" msprop:Generator_RowChangingName="usersRowChanging" msprop:Generator_RowEvHandlerName="usersRowChangeEventHandler" msprop:Generator_RowDeletedName="usersRowDeleted" msprop:Generator_UserTableName="users" msprop:Generator_RowChangedName="usersRowChanged" msprop:Generator_RowEvArgName="usersRowChangeEvent" msprop:Generator_RowClassName="usersRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
