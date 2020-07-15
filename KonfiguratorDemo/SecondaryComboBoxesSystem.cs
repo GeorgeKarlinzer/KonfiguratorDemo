@@ -27,7 +27,7 @@ namespace KonfiguratorDemo
             MySqlCommand command = new MySqlCommand("SELECT * FROM `models` WHERE `title` = \"" + selectedModel + "\"", dB.GetConnection());
 
             adapter.SelectCommand = command;
-            adapter.Fill(table);
+            adapter.Fill(table); 
 
             for (int i = 0; i < table.Columns.Count; i++)
             {
